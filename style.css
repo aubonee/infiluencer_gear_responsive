@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+}
+
+/* shared styles */
+.section-style{
+    width:80%;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: max-content;
+
+}
+.nav-bar{
+   
+    justify-content: space-around;
+}
+.logo-sec p{
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.nav-item ul{
+    display: flex;
+}
+.nav-item ul li{
+    list-style: none;
+    
+}
+.nav-item ul li a{
+    padding: 20px;
+    text-decoration: none;
+}
+
+.banner{
+    justify-content: space-between;
+    height: max-content;
+
+}
+.banner h1{
+    color: #3A3A3A;
+font-family: Poppins;
+font-size: 52px;
+font-style: normal;
+font-weight: 700;
+line-height: 70px; /* 134.615% */
+}
+
+.banner-content{
+    width:50%;
+
+}
+.btn-megenta{
+    border-radius: 41px;
+background: #E02C6D;
+padding: 10px 24px;
+color: #FFFFFF;
+border: none;
+
+}
+.banner-img{
+    width:50%;
+    margin: 0;
+    height: 100vh;
+    align-items: center;
+    background-image: url(images/Circle\ design.svg);
+    background-size: cover;
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.banner-img img{
+    position: relative;
+    top: 200px;
+    left:100px; 
+}
+.sponsor{
+    justify-content: space-evenly;
+   
+    
+}
+.sponsor-img{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+
+}
+.sponsor-img img{
+    width:100px;
+}
+.border-div{
+    margin: 0 auto;
+    width: 1110px;
+height: 1px;
+fill:linear-gradient(135deg, rgba(192, 204, 218, 0.10) 0%, rgba(192, 204, 218, 0.60) 50.38%, rgba(192, 204, 218, 0.10) 100%); ;
+}
+
+
+.collection-section{
+    width:80%;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+@media screen and (max-width:576px){
+    .section-style{
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .banner{
+        margin:0px;
+        padding:0px;
+        width: 100%;
+        flex-direction: column-reverse;
+
+    }
+    .banner-content .banner-img{
+        width: 100%;
+    }
+    .banner-img img{
+        left: 0;
+       
+    }
+    .sponsor{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
