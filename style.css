@@ -36,6 +36,18 @@ body{
     text-decoration: none;
 }
 
+
+
+
+.btn-megenta{
+    border-radius: 41px;
+background: #E02C6D;
+padding: 10px 24px;
+color: #FFFFFF;
+border: none;
+
+}
+/*
 .banner{
     justify-content: space-between;
     height: max-content;
@@ -47,22 +59,12 @@ font-family: Poppins;
 font-size: 52px;
 font-style: normal;
 font-weight: 700;
-line-height: 70px; /* 134.615% */
+line-height: 70px; 
 }
-
 .banner-content{
     width:50%;
 
-}
-.btn-megenta{
-    border-radius: 41px;
-background: #E02C6D;
-padding: 10px 24px;
-color: #FFFFFF;
-border: none;
-
-}
-.banner-img{
+} .banner-img{
     width:50%;
     margin: 0;
     height: 100vh;
@@ -77,7 +79,50 @@ border: none;
     position: relative;
     top: 200px;
     left:100px; 
+} */
+.hide{
+    display: none;
 }
+.banner{
+    width: 80%;
+    padding: 20px auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100svh; */
+    height: 70vh;
+
+}
+.banner div{
+    width:50%;
+    margin: 0;
+
+}
+
+.banner-img{
+   
+    height: 70vh;
+    background-image: url(images/Circle\ design.svg);
+    background-size: cover;
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.banner-img img{
+    width:375px;
+   /* width: 100%; */
+    /* height: 353px; */
+    padding: 40px;
+    
+
+}
+
+
 .sponsor{
     justify-content: space-evenly;
    
@@ -117,18 +162,25 @@ fill:linear-gradient(135deg, rgba(192, 204, 218, 0.10) 0%, rgba(192, 204, 218, 0
     }
     .banner{
         margin:0px;
-        padding:0px;
+        padding: 20px auto;
         width: 100%;
         flex-direction: column-reverse;
 
     }
-    .banner-content .banner-img{
+    .banner div{
+        width:100%;
+        padding: 20px auto;
+        margin: 0;
+        height: max-content;
+    
+    }
+    /* .banner-content .banner-img{
         width: 100%;
     }
     .banner-img img{
         left: 0;
        
-    }
+    } */
     .sponsor{
         display: flex;
         flex-wrap: wrap;
