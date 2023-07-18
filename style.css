@@ -101,10 +101,12 @@ fill:linear-gradient(135deg, rgba(192, 204, 218, 0.10) 0%, rgba(192, 204, 218, 0
 
 
 .collection-section{
+    padding-top: 50px;
     width:80%;
     margin:0 auto;
     display:grid;
     grid-template-columns: repeat(4,1fr);
+    gap: 20px;
 
 }
 @media screen and (max-width:576px){
@@ -130,6 +132,9 @@ fill:linear-gradient(135deg, rgba(192, 204, 218, 0.10) 0%, rgba(192, 204, 218, 0
     .sponsor{
         display: flex;
         flex-wrap: wrap;
+    }
+    .collection-section{
+        grid-template-columns: repeat(1,1fr);
     }
 
 }
